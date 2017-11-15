@@ -96,10 +96,14 @@ Cuando un proceso se ejecuta en modo usuario o modo supervisor, tiene dos pilas 
  Una de sus funciones es saber en qué CPU se está ejecutando la hebra.
  
 +Campos relevantes:
-	-Indicadires ``TIF_SIGPENDING`` y ``TIF_NEED_RESCHED``
-	-CPU: número CPU en la que se ejcuta.
-	-``preempr_count``: contador de apropiación.
+-Indicadires ``TIF_SIGPENDING`` y ``TIF_NEED_RESCHED``.
+	
+-CPU: número CPU en la que se ejcuta.
+	
+-``preempr_count``: contador de apropiación.
 	
 -Macros:
-	-``current_thread_info``: dirección de thread_info del proceso actual.
-	-``current``: dirección del descritor de proceso del proceso actual.
+
+-``current_thread_info``: dirección de thread_info del proceso actual.
+	
+-``current``: dirección del descritor de proceso del proceso actual.
